@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(253, 253, 81);
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    margin: auto 0;
+    height:50vh;
+    width: 90vw;
+
+}
+
+.box {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    width: 90%;
+    margin: 10px;
+}
+
+.img {
+    width: 200px;
+    margin: 10% 0 0 50%;
+}
+
