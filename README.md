@@ -9,7 +9,7 @@ Para desenvolver este projeto utilizei às tecnologias **HTML**, **CSS** e **Jav
 
 ## Sobre o projeto
 
-O projeto é uma jogo de Jokenpo criado utilizando HTML semantico, CSS com media queries e funções nativas do Javascript como a Math,
+O projeto é ua jogo de Jokenpo criado utilizando HTML semantico, CSS com media queries e funções nativas do Javascript como a Math,
 
 **Regras**
 - Papel  ganha da pedra
