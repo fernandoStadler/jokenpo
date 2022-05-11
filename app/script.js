@@ -54,6 +54,7 @@ function cleanClass() {
 function playRock() {
      var choiceRock = parseInt(rock_p.value = 1);
      if (choiceRock && random() == 2) {
+          random();
           cleanClass();
                alertMessage("Você ganhou :D", 'bg-success');
           playerPoint += 1;
@@ -62,12 +63,14 @@ function playRock() {
           add(cpu_rock, 'd-none')
           add(cpu_paper, 'd-none')
      } else if (choiceRock === 1 && random() === 0) {
+          random();
           cleanClass();
                alertMessage("Empate ¬¬' ", 'bg-warning');
           add(cpu_scissors, 'd-none')
           add(cpu_paper, 'd-none')
           remove(cpu_rock, 'd-none')
      } else if (choiceRock === 1 && random() === 1) {
+          random();
           cleanClass();
                alertMessage("Você perdeu :(", 'bg-danger');
           cpuPoint += 1;
@@ -82,6 +85,7 @@ function playRock() {
 function playPapper() {
      var choicePapper = parseInt(paper_p.value = 2);
      if (choicePapper && random() == 2) {
+          random();
           cleanClass(),
           alertMessage("Você perdeu :(", 'bg-danger');
           cpuPoint += 1;
@@ -90,6 +94,7 @@ function playPapper() {
           add(cpu_rock, 'd-none')
           add(cpu_paper, 'd-none')
      } else if (choicePapper && random() == 0) {
+          random();
           cleanClass(),
           alertMessage("Você ganhou :D", 'bg-success');
           playerPoint += 1;
@@ -98,6 +103,7 @@ function playPapper() {
           add(cpu_paper, 'd-none')
           remove(cpu_rock, 'd-none')
      } else if (choicePapper && random() === 1) {
+          random();
           cleanClass(),
           alertMessage("Empate ¬¬' ", 'bg-warning');
           cpuPoint += 1;
@@ -111,12 +117,14 @@ function playPapper() {
 function playScissors() {
      var choiceScissors = parseInt(scissors_p.value = 3);
      if (choiceScissors && random() == 2) {
+          random();
           cleanClass(),
           alertMessage("Empate ¬¬' ", 'bg-warning');
           remove(cpu_scissors, 'd-none')
           add(cpu_rock, 'd-none')
           add(cpu_paper, 'd-none')
      } else if (choiceScissors && random() == 0) {
+          random();
           cleanClass(),
           alertMessage("Você perdeu :(", 'bg-danger');
           cpuPoint += 1;
@@ -125,6 +133,7 @@ function playScissors() {
           add(cpu_paper, 'd-none')
           remove(cpu_rock, 'd-none')
      } else if (choiceScissors && random() === 1) {
+          random();
           cleanClass(),
           alertMessage("Você ganhou :D", 'bg-success');
           playerPoint += 1;
