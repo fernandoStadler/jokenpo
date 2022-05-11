@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="assets/style/global.css">
+    <title>Jokenpô</title>
+</head>
+<body>
+
+    <style>
+        .btn-cpu{
+            background-color: transparent;
+            border: none;
+            color: rebeccapurple;
+        }
+
+        .btn-p{
+            background-color: transparent;
+            border: none;
+            margin:2px;
+        }
+      
+ 
+        .score-label{
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+        .alert{
+            width: 100%;
+            text-align:center;
+            font-size:35px;
+        }
+        .bg-danger{
+            background-color:#dc3545;
+            box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.432);
+            border-radius: 10px;
+            width: 550px;
+            color:white;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        .bg-success{
+            background-color:#198754;
+            box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.432);
+            border-radius: 10px;
+            width: 550px;
+            color:white;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        .bg-alert{
+            background-color:#ffc107;
+            box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.432);
+            border-radius: 10px;
+            width: 550px;
+            color:white;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    </style>
+    <main>
+        <div class="container">
+            <div class="scores">
+                <label>Pontuação</label>
+                <p>Player:<input type="text" id="score-player" class="score-label" value="0" readonly></p>
+                <p>CPU:<input type="text" id="score-cpu" class="score-label"  value="0" readonly></p>
+            </div>
+            <section class="box">
+                <div class="btn-cpu d-none" id="load-cpu">
+                    <img src="http://holyhomeodisha.org/images/loader.gif" width="100" alt="" srcset="">
+                </div>
+                <div  class="btn-cpu d-none" id="rocket-cpu"><img src="assets/img/pedra.png" width="100" alt="" srcset=""></div>
+                <div  class="btn-cpu d-none" id="paper-cpu"><img src="assets/img/papel.png" width="100" alt="" srcset=""></div>
+                <div class="btn-cpu d-none" id="scissors-cpu"><img src="assets/img/tesoura.png" width="100" alt="" srcset=""></div>
+            </section>
+            <section class="box">
+                <button type="button" class="btn-p" id="rocket-p" ><img src="assets/img/pedra.png" width="100" alt="" srcset=""></button>
+                <button type="button" class="btn-p" id="paper-p"><img src="assets/img/papel.png" width="100" alt="" srcset=""></button>
+                <button type="button" class="btn-p" id="scissors-p"><img src="assets/img/tesoura.png" width="100" alt="" srcset=""></button>
+            </section>
+            <div class="buttons">
+                <button id="reset">Reset</button>
+            </div>
+            <section class="box">
+                <p class="alert bg-alert" id="alert">Você perdeu</p>
+            </section>
+        </div>
+
+
+    </main>
+</body>
+<script src="app/script.js"></script>
+</html>

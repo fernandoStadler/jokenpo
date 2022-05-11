@@ -1,63 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
+<html>
 <body>
-    <style>
-        body {
-            background-color: rebeccapurple;
-        }
 
-        .container {
-            width: 80vw;
-            height: 80vh;
-            background-color: brown;
-            display: flex;
-            margin: auto;
+<h1 id="header">Old Header</h1>
 
-        }
-    </style>
-    <main>
-        <div class="container">
-            <section class="btn">
-                <button type="button" id="pedra">pedra</button>
-                <button id="papel">2</button>
-                <button id="tesoura">Validar</button>
-            </section>
-
-        </div>
-    </main>
-</body>
 <script>
-
-    var pedra = document.getElementById('pedra').value;
-    var papel = document.getElementById('papel');
-    var Validar = document.getElementById('tesoura');
-
-    function random(){
-   const random = Math.random()*2;
-    return Math.round(random)
-}
-
-    function choices(){
-        if(pedra.value == random()){
-            console.log(`ganhou ${random()}`)
-        } else {
-            console.log(`Não gaanhou ${random()}`)  
-        }
-    }
-
-
-
-    function ver(){
-        console.log(parseInt(pedra));
-    }
-    Validar.onclick = ver;
+var element = document.getElementById("header");
+element.innerHTML = "New ssssss";
 </script>
+
+</body>
 </html>

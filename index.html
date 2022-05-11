@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,54 +8,36 @@
     <title>Jokenpô</title>
 </head>
 <body>
-
-    <style>
-        .btn-cpu{
-            background-color: rgb(103, 103, 221);
-        }
-
-        .btn-p{
-            background-color: rgb(151, 245, 148);
-        }
-        .btn-cpu:hover{
-            background-color: rgb(80, 80, 148);
-        }
-
-        .btn-p:hover{
-            background-color: rgb(75, 158, 72);
-        }
-
-        .score-label{
-            background-color: transparent;
-            border: none;
-            outline: none;
-        }
-    </style>
     <main>
         <div class="container">
-            <div class="scores">
-                <label>Pontuação</label>
-                <p>Player:<input type="text" id="score-player" class="score-label" value="0" readonly></p>
-                <p>CPU:<input type="text" id="score-cpu" class="score-label"  value="0" readonly></p>
-            </div>
-            <section class="box">
-                <button type="button" class="btn-cpu" id="question-cpu">?</button>
-                <button type="button" class="btn-cpu d-none" id="rocket-cpu">Pedra</button>
-                <button type="button" class="btn-cpu d-none" id="paper-cpu">Papel</button>
-                <button type="button" class="btn-cpu d-none" id="scissors-cpu" >?Tesoura</button>
+            <section class="scores">
+                <label>PLACAR</label>
+                <p>PLAYER:<input type="text" id="score-player" class="score-label" value="0" readonly></p>
+                <p>CPU:<input type="text" id="score-cpu" class="score-label" value="0" readonly></p>
+                <div class="box">
+                    <button id="reset" class="btn-reset">Reset</button>
+                </div>
             </section>
             <section class="box">
-                <button type="button" class="btn-p" id="rocket-p" >Pedra</button>
-                <button type="button" class="btn-p" id="paper-p">Papel</button>
-                <button type="button" class="btn-p" id="scissors-p">Tesoura</button>
+                <div class="btn-cpu " id="rocket-cpu"><img  class="img-choices" src="assets/img/pedra.png"  alt=""
+                    ></div>
+                <div class="btn-cpu d-none" id="paper-cpu"><img  class="img-choices" src="assets/img/papel.png"  alt="">
+                </div>
+                <div class="btn-cpu d-none" id="scissors-cpu"><img  class="img-choices" src="assets/img/tesoura.png"  alt=""></div>
             </section>
-            <div class="buttons">
-                <button id="reset">Reset</button>
-            </div>
+            <section class="box">
+                <button type="button" class="btn-p" id="rocket-p"><img class="img-choices" src="assets/img/pedra.png"  alt=""
+                        srcset=""></button>
+                <button type="button" class="btn-p" id="paper-p"><img  class="img-choices" src="assets/img/papel.png" width="100" alt=""
+                        srcset=""></button>
+                <button type="button" class="btn-p" id="scissors-p"><img  class="img-choices" src="assets/img/tesoura.png" width="100" alt=""
+                        srcset=""></button>
+                    </section>
+                <section class="box">
+                    <h1 class="alert" id="alert"></h1>
+            </section>
         </div>
-
-
     </main>
+    <script src="app/script.js"></script>
 </body>
-<script src="app/script.js"></script>
 </html>

@@ -1,5 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+:root {
+    --bg-danger: #dc3545;
+    --bg-warning: #ffc107;
+    --bg-transparent-success: #19875467;
+    --bg-success: #198754;
+    --bg-darkblue: #454383;
+    --bg-white: #e5e5e5;
+}
 body {
-    background-color: rgb(253, 253, 81);
+    background-size: cover;
+    background-image: url(/assets/img/bg.jpg);
+    justify-content: center;
+    font-family: 'Coming Soon', cursive;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+.bg-danger{
+    background-color: var(--bg-danger);
+}
+.bg-success{
+    background-color: var(--bg-success);
+}
+.bg-warning{
+    background-color: var(--bg-warning);
+}
+
+.container {
+    height:90vh;
+    width: 70vw;
+    max-height: 100vh;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.233);
+    box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.432);
+    margin: 0 auto;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-p {
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+}
+.img-choices {
+    background-color: var(--bg-darkblue);
+    border-radius: 90px;
+    width: 100px;
+}
+.img-choices:hover {
+    background-color: var(--bg-white);
+    border-radius: 90px;
+    width: 100px;
+}
+.scores {
+    padding: 10px;
+    margin: 10px;
+    max-width: 250px;
+    display:block;
+    color: bisque;
+    box-shadow: 1px 1px 3px 5px rgba(0, 0, 0, 0.226);
+    height: auto;
+    background-color: var(--bg-transparent-success);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.score-label {
+    background-color: transparent;
+    color: bisque;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.nav {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--bg-darkblue);
+    display: flex;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--bg-darkblue);
+}
+
+.text-nav {
+    color: wheat;
+    margin-left: 60px;
+    text-transform: uppercase;
 }
 
 .d-none {
@@ -10,12 +109,7 @@ body {
     display: flex;
 }
 
-.container {
-    margin: auto 0;
-    height:50vh;
-    width: 90vw;
 
-}
 
 .box {
     display: flex;
@@ -25,8 +119,22 @@ body {
     margin: 10px;
 }
 
-.img {
+.btn-reset {
+    background-color: var(--bg-darkblue);
+    border-color: transparent;
+    color: var(--bg-white);
+    font-family: 'Coming Soon', cursive;
+    text-transform: uppercase;
+    border-radius: 10px;
     width: 200px;
-    margin: 10% 0 0 50%;
 }
 
+.btn-reset:hover {
+    border: 3px solid var(--bg-white);
+}
+.alert{
+    width: 250px;
+    text-align: center;
+    border-radius:10px;
+    padding:5px;
+}
